@@ -31,10 +31,12 @@ function toggleCaseOfStringFn(theStr = '') {
 
     newString 
       += thisChar == thisChar.toLowerCase() 
-        ? thisChar.toUpperCase() : thisChar.toUpperCase();
+        ? thisChar.toUpperCase() : thisChar.toLowerCase();
   }
 
   return newString;
 }
+
+console.log(toggleCaseOfStringFn('mm Mo'));
 
 module.exports = { toggleCaseOfString, toggleCaseOfStringFn };
